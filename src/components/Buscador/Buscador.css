@@ -1,0 +1,20 @@
+.cnt {
+    padding-top: 10px;
+}
+
+.pelisContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.label {
+    padding-right: 10px;
+}
+
+.linksPelis {
+    color: white;
+}
+
+
