@@ -15,7 +15,7 @@ const API_KEY = "1bc6c554";
 
 export function getMovies(titulo) {
   return function (dispatch) {
-    return fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${titulo}`)
+    return fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${titulo}`)
       .then((response) => response.json())
       .then((json) => {
         dispatch({ type: GET_MOVIES, payload: json });
@@ -26,7 +26,7 @@ export function getMovies(titulo) {
 export function getMovieDetail(id) {
   if (id)
     return function (dispatch) {
-      return fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
+      return fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`)
         .then((response) => response.json())
         .then((json) => {
           dispatch({ type: GET_MOVIE_DETAIL, payload: json });
