@@ -6,8 +6,6 @@ import {
   CLEAR_MOVIE_DETAIL,
 } from "./types";
 
-//REACT_APP_OMDB_APIKEY = "1bc6c554&i";//para obtener esta API KEY deberiamos conectarnos al back, y en el back tener esta variable de entorno
-
 //SE DECLARA LA API KEY
 const API_KEY = "1bc6c554";
 

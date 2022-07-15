@@ -20,8 +20,8 @@ export class Buscador extends Component {
     event.preventDefault();
     this.props.getMovies(this.state.title);
     this.setState({
-      title: ""
-    })
+      title: "",
+    });
   }
 
   render() {
